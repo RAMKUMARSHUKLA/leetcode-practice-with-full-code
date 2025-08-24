@@ -3,6 +3,12 @@ public class Threads {
         new Thread1().start();
         Thread th=new Thread(new Thread2());
         th.start();
+        new Thread(()->{
+            System.out.println("Thread started");
+        }).start();
+        new Thread(()->{
+            System.out.println("thread started 2");
+        }).start();
     }
 }
 
